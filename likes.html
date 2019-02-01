@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geocoding service</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyD9lAd_ZoK1PmY-_jwVQLQbqO9QhD11CGw",
+    authDomain: "floof-6900b.firebaseapp.com",
+    databaseURL: "https://floof-6900b.firebaseio.com",
+    projectId: "floof-6900b",
+    storageBucket: "floof-6900b.appspot.com",
+    messagingSenderId: "508207663303"
+  };
+  firebase.initializeApp(config);
+
+    var cors = "https://cors-anywhere.herokuapp.com/";
+
+    var queryURL = cors + "https://api.petfinder.com/pet.find?format=json&key=16c8fc98e1056d6d5326fcf959f61480&animal=dog&location=" + zip + queryAge + querySize;
+
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: {lat: 41.505493, lng: -81.681290}
+        });
+        var geocoder = new google.maps.Geocoder();
+
+       
+      }
+
+      function geocodeAddress(geocoder, resultsMap) {
+        var address = "44145"
+        geocoder.geocode({'address': address}, function(results, status) {
+          if (status === 'OK') {
+            resultsMap.setCenter(results[0].geometry.location);
+            var marker = new google.maps.Marker({
+              map: resultsMap,
+              position: results[0].geometry.location
+            });
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+      }
+    </script>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgse5wo65AOE-yOCaKMIve4ehjuIR3NWI&callback=initMap">
+    </script>
+</html>

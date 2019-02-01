@@ -1,0 +1,157 @@
+body {
+	background-color: #eee;
+	overflow-x: hidden;
+}
+
+a {
+	color: #eee;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ccc;
+}
+
+a.logoLink {
+	text-decoration: none;
+	text-transform: none;
+	color: #fff;
+}
+
+a.logoLink:hover {
+	color: #eee;
+}
+
+div.navbar {
+	background-color: #0071BC;
+	color: #fff;
+}
+
+h1.logo {
+	font-size: 45px;
+	color: #fff;
+	display: inline-block;
+}
+
+h1.logo-centered {
+	float: none;
+	margin: 0 auto;
+}
+
+div.dogCard {
+	float: none;
+	margin: 0 auto;
+	width: 60%;
+}
+
+div.likesCard {
+	float: none;
+	margin: 0 auto;
+	width: 50%;
+}
+
+div.row {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+div.lovedBox {
+	font-size: 10px;
+	max-width: 300px;
+}
+
+img.buttonImg {
+	height: 50px;
+	width: 50px;
+}
+
+p.overlay {
+	opacity: .8;
+}
+
+div#aboutUs {
+	color: #fff;
+	width: 30%;
+	float: right;
+	padding-right: 10px;
+	padding-top: 20px;
+}
+
+div#header-image {
+	width: 100%;
+	height: 400px;
+}
+
+button#likesBtn {
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	padding-top: 5px;
+	text-decoration: none;
+	border: 0;
+	background-color: #F25B6D;
+	cursor: pointer;
+}
+
+button#likesBtn:hover {
+	color: #eee;
+}
+
+button#skip-btn {
+	font-size: 100%;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #34B44D;
+	padding-top: 5px;
+	text-decoration: none;
+	border: 0;
+	background-color: #fff;
+	width: 50%;
+}
+
+button#skip-btn:hover {
+	background-color: #8DD99C;
+}
+
+button#love-btn {
+	font-size: 100%;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #F25B6D;
+	padding-top: 5px;
+	text-decoration: none;
+	border: 0;
+	background-color: #fff;
+	float: right;
+	width: 50%;
+}
+
+button#love-btn:hover {
+	background-color: #F5ABB4;
+}
+
+div#map {
+	width: 100%;
+	height: 500px;
+	margin: 0 auto;
+}
+
+div.footer {
+	background-color: #0071BC;
+	color: #fff;
+  	height: 90px;
+  	margin-top: 20px;
+  	padding-top: 12px;
+  	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+	div#aboutUs {width: 85%; float: none; margin: 0 auto; padding-top: 20px; opacity: 1.2;}
+	/* Darkens dog image to make it easier to read About text */
+	div#shade {width: 100%; height: 100%; background-color: rgba(0,0,0,.3);}
+	div.footer {}
+}
+
+
+
+

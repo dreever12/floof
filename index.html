@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Floof | Find Adoptable Pets</title>
+        <!-- Favicon! -->
+        <link rel="icon" href="images/favicon.ico"/>
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- JQuert -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Local CSS -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+    	<div class="navbar">
+    		<a class="navbar-brand" href="#">
+    			<img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Floof">
+ 			</a>
+    	</div>
+    	<div id="header-image">
+    		<div id="shade">
+	    		<div id="aboutUs">
+	    			<h1 class="logo">Floof</h1>
+	    			<p class="overlay">This is Floof! A simple way for you to find the perfect dog who is adoptable and ready for their forever home.  Every dog you will see is adoptable within the distance you specify. So if you see a dog that you like just click the love button and either keep searching or check out your loved dogs and see all the rest of their information, then hop in your car and go get that special puppy.</p>
+	    		</div>
+	    	</div>
+    	</div>
+    	<br/>
+    	<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="card text-center">
+						<div class="card-header">
+					    	Search Availabe Dogs
+						</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col">
+						    	<form>
+									<div class="form-group">
+								    	<label for="userName">Your Name</label>
+								    	<input type="text" class="form-control" id="userName" aria-describedby="emailHelp" placeholder="First Last">
+									</div>
+									<div class="form-group">
+								    	<label for="userStreetAddress">Street Address</label>
+								    	<input type="text" class="form-control" id="userStreetAddress" placeholder="Address">
+								    	<br/>
+								    	<label for="userZipCode">Zip Code</label>
+								    	<input type="text" class="form-control" id="userZipCode" placeholder="Zip Code">
+									</div>
+								</form>
+								</div>
+									<div class="col">
+										<div class="form-check text-left">
+											<center><label>Age(s)</label></center>
+									    	<input type="checkbox" class="checkAge form-check-input checkAge" id="ageBaby" data-age="Baby">
+									    	<label class="form-check-label" for="ageBaby">Baby</label>
+									    	<br/>
+									    	<input type="checkbox" class="checkAge form-check-input" id="ageYoung" data-age="Young">
+									    	<label class="form-check-label" for="ageYoung">Young</label>
+									    	<br/>
+									    	<input type="checkbox" class="checkAge form-check-input" id="ageAdult" data-age="Adult">
+									    	<label class="form-check-label" for="ageAdult">Adult</label>
+									    	<br/>
+									    	<input type="checkbox" class="checkAge form-check-input" id="ageSenior" data-age="Senior">
+									    	<label class="form-check-label" for="ageSenior">Senior</label>
+									    	<br/>
+										</div>
+									</div>
+									<div class="col">
+										<div class="form-check text-left">
+											<center><label>Size</label></center>
+									    	<input type="checkbox" class="checkSize form-check-input" id="sizeSmall" data-size="S">
+									    	<label class="form-check-label" for="sizeSmall">Small</label>
+									    	<br/>
+									    	<input type="checkbox" class="checkSize form-check-input" id="sizeMedium" data-size="M">
+									    	<label class="form-check-label" for="sizeMedium">Medium</label>
+									    	<br/>
+									    	<input type="checkbox" class="checkSize form-check-input" id="sizeLarge" data-size="L">
+									    	<label class="form-check-label" for="sizeLarge">Large</label>
+									    	<br/>
+										</div>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-primary text-center submit">Submit</button>
+							</form>
+					 	</div>
+					</div>
+				</div>
+			</div>
+    	</div>
+    	<div class="footer navbar-fixed-bottom">
+    		<div class="row text-center">
+    			<div class="col">
+    				Created by David Sheppard, Dennyela Reever, and Ethan Ling.
+    			</div>
+    			<div class="col">
+    				Floof uses the <a href="https://www.petfinder.com/developers/api-docs">PetFinder API</a> and the <a href="https://google.com/maps">Google Maps API</a>
+    			</div>
+    		</div>
+    	</div>
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+        <!-- Backstretch JQuery Plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js"></script>
+        <script type="text/javascript">
+    		$("#header-image").backstretch("images/jumbotron.jpg");
+    	</script>
+        <!-- Local JS -->
+        <script src="js/submit.js"></script>
+    </body>
+</html>

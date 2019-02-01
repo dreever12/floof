@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Floof | Find Adoptable Pets</title>
+        <!-- Favicon! -->
+        <link rel="icon" href="images/favicon.ico"/>
+        <!-- CSS Reset -->
+        <link rel="stylesheet" href="css/reset.css"/>
+        <!-- JQuery -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+        <!-- Local CSS -->
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+    	<div class="navbar text-center">
+    		<a class="navbar-brand" href="#">
+    			<img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="Floof">
+ 			</a>
+            <a href="index.html" class="logoLink">
+ 			    <h1 class="logo-centered text-center">Floof</h1>
+            </a>
+            <button href="#" id="likesBtn">LOVES</button>
+    	</div>
+        <div id="map"></div>
+    	<div class="container">
+  			<br/>
+    		<div class="row">
+    			<div class="col">
+					<div class="card dogCard">
+						<img class="card-img-top dog-image" src="images/placeholder.png" alt="Dog">
+						<div class="card-body">
+					    <h5 class="card-title dog-name">Dog Name</h5>
+					    <p class="card-text dog-info">Some quick example text to about the dog that will be displayed</p>
+					    <button href="#" id="skip-btn" class="dog-btn">
+					    	<img class="buttonImg" src="images/skip.png" alt="Skip"><br/>
+					    	Skip
+					    </button>
+					    <button href="#" id="love-btn" class="dog-btn">
+					    	<img class="buttonImg" src="images/love.png" alt="Love"><br/>
+                            Love
+						</button>
+					  </div>
+					</div>
+    			</div>
+    		</div>
+    	</div>
+        
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Firebase -->
+        <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+        <!-- Google Maps -->
+          <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx3b4z5Dkuq0AW1bSoLlMHZKqKbfkc8kA&callback=initialize">
+    </script>
+        <!-- Backstretch JQuery Plugin -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.3/jquery.backstretch.min.js"></script>
+        <script type="text/javascript">
+    		$("#header-image").backstretch("images/jumbotron.jpg");
+    	</script>
+        <!-- Local JS -->
+        <script src="js/app.js"></script>
+    </body>
+</html>
